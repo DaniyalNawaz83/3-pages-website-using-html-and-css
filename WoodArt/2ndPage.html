@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600&family=Playball&family=Poppins:wght@500&family=Satisfy&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+
+    }
+    .main{
+        width: 100vw;
+        height: 100%;
+        background-color:rgb(219, 198, 198) ;
+    }   
+    .container{
+        width: 100vw;
+        height: 100vh;
+        
+
+    }
+    .container .navbar{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 15vh;
+        justify-content: space-between;
+        width: 70%;
+        margin: auto;
+        position: relative;
+    }
+    .navbar .navlist{
+        display: flex;
+        gap: 1.7rem; 
+    }
+    .navbar .logo{
+        color: black;
+         font-size: 3rem;
+         font-weight: bold;
+         
+         font-family: 'Playball', cursive;
+
+    }
+    .navlist li{
+        list-style: none;
+    }
+    .navlist a{
+        text-decoration: none;
+        font-size: 1.5rem ;
+        color: rgb(35,35,35);
+    }
+    .circle{
+        height: 400px;
+        width: 400px;
+        /* background-color: rgb(200, 194, 194); */
+        border-radius: 50%;
+        position: absolute;
+        top: 20%;
+        right: 10%; 
+    }
+    .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .right{
+        flex-basis: 40%;
+        text-align: right;
+        
+    }
+    .left{
+        flex-basis: 40%;
+        max-width: 450px;
+        margin-top: -400px;
+        margin-right: 1500px;
+      
+        
+    }
+    .left h1{
+        font-size: x-large;
+        font-style: italic;
+        font-weight: bold;
+    }
+    .left p{
+        font-size: small;
+    }
+    .right img{
+        height: 100%;
+        border-radius: 50%;
+    }
+    #Parts{
+        padding: 100px 50px;
+    }
+    .row{
+        display: flex;
+         justify-content: end;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .Woodenchair{
+        flex-basis: 50%;
+        height: 600px;
+        /* display: flex; */
+
+
+    }
+    .Woodenchair img{
+        width: 80%;
+        border-radius: 50%;
+        
+        
+    }
+    .properties{
+        flex-basis: 50%;
+        margin-top: -40%;
+        margin-right: 50%;
+    }
+    .properties h1{
+        font-size: xx-large;
+        font-weight: bolder;
+        font-family:'Poppins', sans-serif ;
+        padding: 2px 10px;
+
+    }
+    #Parts2{
+        padding: 100px 50px;
+    }
+    .Second{
+        display: flex;
+         justify-content: end;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .Table{
+        flex-basis: 50%;
+
+
+    }
+    .Table img{
+        width: 80%;
+        border-radius: 50%;
+        
+        
+        
+    }
+    .properties2{
+        flex-basis: 50%;
+       margin-top: -20%;
+        margin-right: 50%;
+    }
+    .properties2 h1{
+        font-size: xx-large;
+        font-weight: bolder;
+        font-family:'Poppins', sans-serif ;
+        padding: 10px 20px;
+
+    }
+    #Parts3{
+        padding: 100px 50px;
+    }
+    .third{
+        display: flex;
+         justify-content: end;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .Dining{
+        flex-basis: 50%;
+
+
+    }
+    .Dining img{
+        width: 80%;
+        border-radius: 50%;
+        
+        
+        
+    }
+    .properties3{
+        flex-basis: 50%;
+       margin-top: -20%;
+        margin-right: 50%;
+    }
+    .properties3 h1{
+        font-size: xx-large;
+        font-weight: bolder;
+        font-family:'Poppins', sans-serif ;
+        padding: 10px 20px;
+
+    }
+    #Parts4{
+        padding: 100px 50px;
+    }
+    .fourth{
+        display: flex;
+         justify-content: end;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .Sofa{
+        flex-basis: 50%;
+
+
+    }
+    .Sofa img{
+        width: 80%;
+        border-radius: 50%;
+        
+        
+        
+    }
+    .properties4{
+        flex-basis: 50%;
+       margin-top: -20%;
+        margin-right: 50%;
+    }
+    .properties4 h1{
+        font-size: xx-large;
+        font-weight: bolder;
+        font-family:'Poppins', sans-serif ;
+        padding: 10px 20px;
+
+    }
+    #Parts5{
+        padding: 100px 50px;
+    }
+    .five{
+        display: flex;
+         justify-content: end;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .Bed{
+        flex-basis: 50%;
+
+
+    }
+    .Bed img{
+        width: 80%;
+        border-radius: 50%;
+        
+        
+        
+    }
+    .properties5{
+        flex-basis: 50%;
+       margin-top: -20%;
+        margin-right: 50%;
+    }
+    .properties5 h1{
+        font-size: xx-large;
+        font-weight: bolder;
+        font-family:'Poppins', sans-serif ;
+        padding: 10px 20px;
+
+    }
+    
+    
+</style>
+<body>
+    <div class="main">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">Wood Arts</div>
+            <ul class="navlist">
+                <li><a href="#home"class="orange" onclick="window.location.href='WoodArt.html'" >Home</a></li>
+                <li><a href="#Product" >Product</a></li>
+                <li><a href="#Our store" >Our store</a></li>
+                <li><a href="#About" class="orange" onclick="window.location.href='3rdpage.html'" >About Us</a></li>
+            </ul>
+
+        </div>
+        <div class="circle">
+            <div class="content">
+                
+                <div class="right">
+                    <img src="images/chair.jpg" alt="">
+                </div>
+                <div class="left">
+                    <h1>Create <br>Awesome <span>Things</span></h1>
+                    <p>Find Your good way the living the furnisher</p>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+    <section id="Parts">
+        <div class="row">
+            <div class="Woodenchair"> 
+                <img src="images/wooden_chair-removebg-preview (1).png" alt=""> </div>
+        </div>
+        <div class="properties">
+            <h1>Wooden Chair</h1>
+            <p> Made from solid wood and needless to say, they are extremely strong. They can easily withstand the wear and tear of daily use and are sure to remain functional for a very long period of time. Their enhanced durability also eliminates the need to replace them any time soon.</p>
+            <button>Only 4000Rs/-</button>
+        </div>
+        </section>
+        <section id="Parts2">
+            <div class="Second">
+                <div class="Table"> 
+                    <img src="images/table-removebg-preview.png" alt=""> </div>
+            </div>
+            <div class="properties2">
+                <h1>Table Wood Pine</h1>
+                <p> Let's look at what makes it good, what you need to be careful of, and overall pine wood properties.</p>
+                <button>Only 12000Rs/-</button>
+            </div>
+        </section>
+        <section id="Parts3">
+            <div class="third">
+                <div class="Dining"> 
+                    <img src="images/dining2-removebg-preview.png" alt=""> </div>
+            </div>
+            <div class="properties3">
+                <h1>Table Dining Table</h1>
+                <p> Traditional. Ornate detailing, like turned legs and carvings, and dark solid wood are common features of traditional dining tables.</p>
+                <button>Only 25000Rs/-</button>
+            </div>
+        </section>
+        <section id="Parts4">
+            <div class="fourth">
+                <div class="Sofa"> 
+                    <img src="images/download-removebg-preview.png" alt=""> </div>
+            </div>
+            <div class="properties4">
+                <h1>Sofa </h1>
+                <p> Frame that will allow it to maintain its overall shape and integrity.</p>
+                <button>Only 75000Rs/-</button>
+            </div>
+        </section>
+        <section id="Parts5">
+            <div class="five">
+                <div class="Bed"> 
+                    <img src="images/family_festv-removebg-preview.png" alt=""> </div>
+            </div>
+            <div class="properties5">
+                <h1>Bed </h1>
+                <p> Cushioned mattress on a bed frame with luxarious view</p>
+                <button>Only 1,75,000Rs/-</button>
+            </div>
+        </section>
+    </div>
+    </body>
+</html>

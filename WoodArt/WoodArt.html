@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600&family=Playball&family=Poppins:wght@500&family=Satisfy&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+
+    }
+
+    .Container{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(219, 198, 198);
+    position: relative;
+    flex-wrap: wrap;
+    display: flex; 
+    }
+    .Container .navbar{
+        display: flex;
+        height: 15vh;
+        align-items: center;
+        justify-content: space-between;
+        width: 70%;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+    .navbar .navlist{
+        display: flex;
+        gap: 1.7rem; 
+        display: flex;
+    }
+    .navbar .logo{
+        color: black;
+         font-size: 3rem;
+         font-weight: bold;
+         
+         font-family: 'Playball', cursive;
+
+    }
+    .navlist li{
+        list-style: none;
+    }
+    .navlist a{
+        text-decoration: none;
+        font-size: 1.5rem ;
+        color: rgb(35,35,35);
+    }
+    .Side{
+        /* background-color: rgb(191, 198, 198); */
+        display: flex;
+        height: 85vh;
+        align-items:center;
+        width: 95%;
+        margin: auto;
+        
+    }
+    .Side .content{
+        flex: 1;
+    }
+    
+    .Side .cards{
+        display: flex;
+        align-items: center ;
+        gap: 2rem;
+        /* background-color: rgb(113, 123, 101); */
+        flex: 2;
+        display: flex;
+        
+    }
+
+    .cards .card{
+         /* background-color: rgb(135, 104, 4);  */
+        width: 100%;
+        height: 20rem;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+    }
+    .content h1{
+        color: rgb(228, 168, 0);
+        font-size: 3rem;
+        font-weight: bold;
+        font-style: italic;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .content p{
+        color: black;
+        font-size: 1.2rem;
+        max-width: 85%;
+        margin: 1.8rem 0;
+        display: flex;
+
+    }
+    .content button{
+        background-color: rgb(74, 74, 173);
+        color: aliceblue;
+        font-size: 1.3rem;
+        padding: .7rem 1.3rem;
+        border: solid black;
+        display: flex;
+     }
+    .cards :nth-child(1){
+        margin-top: 6rem;
+        background-image: url(images/1st.jpg)
+        
+    }
+    .cards :nth-child(2){
+        background-image: url(images/second.jpg);
+    }
+    .cards :nth-child(3){
+        margin-bottom: 3rem;
+        background-image: url(images/dining.jpg);
+    }
+    
+    
+  
+</style>
+<body>
+    <div class="Container">
+        <div class="navbar">
+            <div class="logo">Wood Arts</div>
+            <ul class="navlist">
+                <li><a href="#" class="orange">Home</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#" class="orange"  >Our store</a></li>
+                <li><a href="#About" class="orange" onclick="window.location.href='3rdpage.html'" >About Us</a></li>
+            </ul>
+
+        </div>
+        <section class="Side">
+            <div class="content">
+                <h1> Make  Your  Home Better</h1>
+                <p>Custom built, quality Dining Tables, Chairs, Bedroom Sets, Office Desks & more</p>
+                <button onclick="window.location.href='2ndpage.html'" type="button">
+            
+                    Discover Now</button>
+            </div>
+            <div class="cards">
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
+        </section>
+        
+
+</div>
+
+</body>
+</html>
